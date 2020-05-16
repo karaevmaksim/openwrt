@@ -48,12 +48,12 @@
 };
 
 &wmac {
-	ralink,mtd-eeprom = <&factory 0>;
+	ralink,mtd-eeprom = <&factory 0x0>;
 };
 
 &state_default {
 	default {
-		ralink,group = "ephy", "wled", "pa", "i2c", "wdt", "uartf";
-		ralink,function = "gpio";
+		groups = "ephy", "wled", "pa", "i2c", "wdt", "uartf";
+		function = "gpio";
 	};
 };

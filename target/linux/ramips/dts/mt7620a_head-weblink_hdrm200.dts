@@ -156,14 +156,14 @@
 };
 
 &wmac {
-	ralink,mtd-eeprom = <&factory 0>;
+	ralink,mtd-eeprom = <&factory 0x0>;
 };
 
 &state_default {
 	default {
-		ralink,group = "i2c", "uartf", "pa", "spi refclk",
+		groups = "i2c", "uartf", "pa", "spi refclk",
 			       "wled";
-		ralink,function = "gpio";
+		function = "gpio";
 	};
 };
 
